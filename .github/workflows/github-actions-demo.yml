@@ -23,16 +23,15 @@ jobs:
             ls ${{ github.workspace }}
         - run: echo "🍏 The job's status is ${{ job.status }}."
 
-name: Github Action - Dev
-on: 
+on:
   push:
     branches:
-      -dev
+      -develop
 
 jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
-    environment: dev
+    environment: development 
     steps:
       - run: echo "🎉 The job was automatically triggered For the dev branch by a ${{ github.event_name }} event."
       - name: Checkout repository code
