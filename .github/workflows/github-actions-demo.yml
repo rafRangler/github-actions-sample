@@ -2,12 +2,12 @@ name: Github Actions Demo
 on:
   push:
     branches:
-      - staging
+      - prod
 
 jobs: 
   Explore-Github-Actions:
     runs-on: ubuntu-latest
-    environment: staging
+    environment: prod
     steps:
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
         - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
