@@ -26,7 +26,7 @@ jobs:
 on:
   push:
     branches:
-      -develop
+      - develop
 
 jobs:
   Explore-Github-Actions:
