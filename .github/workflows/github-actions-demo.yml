@@ -1,4 +1,6 @@
-name: Github Actions Demo
+
+
+name: Github Actions Demo - Prod
 on:
   push:
     branches:
@@ -20,3 +22,18 @@ jobs:
           run: |
             ls ${{ github.workspace }}
         - run: echo "🍏 The job's status is ${{ job.status }}."
+
+name: Github Action - Dev
+on: 
+  push:
+    branches:
+      -dev
+
+jobs:
+  Explore-Github-Actions:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "🎉 The job was automatically triggered For the dev branch by a ${{ github.event_name }} event."
+      - name: Checkout repository code
+        uses: actions/checkout@v2
