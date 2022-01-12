@@ -1,4 +1,4 @@
-name: Github Actions Demo
+name: Github Actions Demo Staging
 on:
   push:
     branches:
