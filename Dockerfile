@@ -6,8 +6,8 @@ FROM node:16.13.1-buster
 WORKDIR /code
 
 # Copy package.json and package-lock.json into working directory /code
-COPY package.json package.json
-COPY package-lock.json package-lock.json
+COPY my-app/package.json package.json
+COPY my-app/package-lock.json package-lock.json
 
 # Install packages 
 RUN npm install
