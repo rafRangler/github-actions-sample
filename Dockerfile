@@ -16,6 +16,6 @@ RUN npm install
 COPY . . 
 
 # Docker runs this command 
-WORKDIR /my-app
+WORKDIR /code/my-app
 CMD ["npm", "run", "start"]
 
