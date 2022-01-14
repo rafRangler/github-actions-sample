@@ -21,7 +21,7 @@ jobs:
           uses: actions/checkout@v2
         - name: Build Docker Image
           run: docker build -t react-docker:1.0.0-prod .
-          run: docker run --rm -it --name web -p 3000:3000 react-docker:1.0.0-dev
+        - run: docker run --rm -it --name web -p 3000:3000 react-docker:1.0.0-dev
 
   Prod-Github-Action:
     runs-on: ubuntu-latest
