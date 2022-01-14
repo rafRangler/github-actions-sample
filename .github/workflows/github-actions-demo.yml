@@ -1,6 +1,6 @@
 
 
-name: Github Actions Demo - Prod
+name: Github Actions Demo - Production
 on:
   push:
     branches:
