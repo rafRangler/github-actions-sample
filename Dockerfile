@@ -13,7 +13,7 @@ COPY my-app/package-lock.json package-lock.json
 RUN npm install
 
 # Copy all files from local directory into /code directory
-COPY . . 
+COPY /src /code
 
 # Docker runs this command 
 CMD ["npm", "run", "start"]
